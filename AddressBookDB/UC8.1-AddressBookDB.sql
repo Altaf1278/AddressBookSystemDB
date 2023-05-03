@@ -25,3 +25,7 @@ select * from addressbook where state = 'Maharashtra';
 
 ------  UC7  ------
 Select state, COUNT(*) as total_contacts from addressbook group by state;  
+
+------  UC8  ------
+ update  addressbook set city = 'Pune' where id = 3;
+ Select * from addressbook where city = 'Pune' order by last_name;
