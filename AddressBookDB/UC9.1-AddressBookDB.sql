@@ -28,4 +28,14 @@ Select state, COUNT(*) as total_contacts from addressbook group by state;
 
 ------  UC8  ------
  update  addressbook set city = 'Pune' where id = 3;
- Select * from addressbook where city = 'Pune' order by last_name;
+ 
+ ------  UC9 ------
+ alter table addressbook add column name varchar(50),add column type varchar(50);
+ update addressbook SET name = 'Altaf', type = 'Profession' where id = 1;
+ update addressbook SET name = 'Rauf', type = 'My Family' where id = 2;
+ update addressbook SET name = 'Kiran', type = 'My Friend' where id = 3;
+ update addressbook SET name = 'Muskan', type = 'My Family' where id = 4;
+ update addressbook SET name = 'Rose', type = 'Profession' where id = 6;
+ update addressbook SET name = 'SholkBabu', type = 'Profession' where id = 7;
+ select * from addressbook;
+ 
