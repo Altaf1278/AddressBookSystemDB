@@ -41,3 +41,7 @@ Select state, COUNT(*) as total_contacts from addressbook group by state;
  ------  UC10  ------
  select type, count(*) as count from addressbook group by type;
  
+ ------  UC11  ------
+ insert into addressbook(first_name, last_name, email, phonenumber, address, city, state, zip,name,type) values ('Virat', 'Kohli', 'virat.kohli@gmail.com', '7217255586', 'Pindiwadi', 'Surat', 'Gujarat', '456789','Virat','My Friend');
+ insert into addressbook(first_name, last_name, email, phonenumber, address, city, state, zip,name,type) values ('Aman', 'Sayyad', 'Aman121@gmail.com', '9877455586', 'Nigdi', 'Pune', 'Maharashtra', '456700','Aman','My Family');
+ select * from addressbook; 
