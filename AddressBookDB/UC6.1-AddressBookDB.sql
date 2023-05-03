@@ -18,3 +18,7 @@ select * from addressbook;
  ------  UC5  ------
 delete from addressbook where first_name = 'Priya';
 select * from addressbook;  
+
+------  UC6  ------
+select * from addressbook where city = 'Siwan';
+select * from addressbook where state = 'Maharashtra';
