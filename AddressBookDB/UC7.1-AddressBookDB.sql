@@ -22,3 +22,6 @@ select * from addressbook;
 ------  UC6  ------
 select * from addressbook where city = 'Siwan';
 select * from addressbook where state = 'Maharashtra';
+
+------  UC7  ------
+Select state, COUNT(*) as total_contacts from addressbook group by state;  
