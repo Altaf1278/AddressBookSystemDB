@@ -23,10 +23,10 @@ select * from addressbook;
 select * from addressbook where city = 'Siwan';
 select * from addressbook where state = 'Maharashtra';
 
-------  UC7  ------
+ ------  UC7  ------
 Select state, COUNT(*) as total_contacts from addressbook group by state;  
 
-------  UC8  ------
+ ------  UC8  ------
  update  addressbook set city = 'Pune' where id = 3;
  
  ------  UC9 ------
@@ -37,5 +37,7 @@ Select state, COUNT(*) as total_contacts from addressbook group by state;
  update addressbook SET name = 'Muskan', type = 'My Family' where id = 4;
  update addressbook SET name = 'Rose', type = 'Profession' where id = 6;
  update addressbook SET name = 'SholkBabu', type = 'Profession' where id = 7;
- select * from addressbook;
+ 
+ ------  UC10  ------
+ select type, count(*) as count from addressbook group by type;
  
